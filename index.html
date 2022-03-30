@@ -24,6 +24,7 @@
         <button class="primary ghost">
           Follow
         </button>
+        <br/>
         <div class="qrcode" id="qrcode"></div>
       </div>
       <div class="footer">
@@ -70,8 +71,11 @@
   </script>
   <script type="text/javascript">
     let text = document.getElementById("address").innerHTML;
-    console.log(text)
-    new QRCode(qrcode, text);
+    new QRCode(qrcode, {
+      text: text, 
+      width: 100, 
+      height: 100
+    });
   </script>
   <script>
     var githubURL = Constants.githubURL
