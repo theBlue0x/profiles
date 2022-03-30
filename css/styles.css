@@ -144,13 +144,15 @@ ul {
   transform: rotateY(180deg);
 }
 
+.qrcode {
+  margin-top: 22px;
+}
+
 .qrcode img {
-  max-height: 125px;
-  max-width: 125px;
+  max-height: 90px;
+  max-width: 90px;
   border: 1px solid cornflowerblue;
   border-radius: 0px;
-  margin-top: 22px;
-  padding: 12px;
   background-color: white;
 }
 
