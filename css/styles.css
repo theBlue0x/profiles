@@ -7,7 +7,7 @@
 
 body {
   font-family: Montserrat, sans-serif;
-  background: #242426;
+  background: url(../assets/client_background.png) center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -196,4 +196,10 @@ button.primary.ghost {
 .footer a {
   color: cornflowerblue;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+  background: black;
+  }
 }
