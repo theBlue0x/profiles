@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 480px) {
+  body {
+    background: url('https://cdn.suwalls.com/wallpapers/abstract/grey-gradient-27559-1920x1080.jpg') center center; 
+  }
+}
+
 body {
   font-family: Montserrat, sans-serif;
   background: url(../assets/client_background.png) center center; 
@@ -151,7 +157,7 @@ ul {
 .qrcode img {
   max-height: 90px;
   max-width: 90px;
-  border: 1px solid cornflowerblue;
+  border: 5px solid white;
   border-radius: 0px;
   background-color: white;
 }
