@@ -7,7 +7,7 @@ button.addEventListener( 'click', function() {
   var y = document.getElementById("front");
     card.classList.toggle('flip');
     setTimeout(() => { y.style.display = "none"; }, 500);
-    setTimeout(() => { x.style.display = "block"; }, 500);
+    setTimeout(() => { x.style.display = "block"; }, 555);
     
 });
 
