@@ -12,6 +12,7 @@
 </head>
 <body>
   <div class="card-container">
+
     <div id="front">
       <img id="image">
       <h3 id="username"></h3>
@@ -31,7 +32,45 @@
         <h6><a id="nft_link">View NFT Collection</a></h6>
       </div>
     </div>
-    <div id="back" style="display:none;">
+
+    <div id="back_send" style="display:none;">
+      <form>
+        <select id="currency" name="currency">
+          <option value="blx">BLX</option>
+          <option value="audx">AUDX - Australian Dollar</option>
+          <option value="cadx">CADX - Canadian Dollar</option>
+          <option value="chfx">CHFX - Swiss Franc</option>
+          <option value="cnyx">CNYX - Chinese Yuan</option>
+          <option value="eurx">EURX - Euro</option>
+          <option value="gbpx">GBPX - British Pound</option>
+          <option value="iqdx">IQDX - Iraqi Dinar</option>
+          <option value="irrx">IRRX - Iranian Rial</option>
+          <option value="jpyx">JPYX - Japanese Yen</option>
+          <option value="nxdx">NZDX - New Zealand Dollar</option>
+          <option value="usdx">USDX - United States Dollar</option>
+          <option value="rubx">RUBX - Russian Ruble </option>
+
+        </select>
+
+        <input type="text" id="address1" name="address1" placeholder="recipient">
+
+        <input type="text" id="amount" name="amount" placeholder="amount">
+
+        <input type="text" id="secret" name="secret" placeholder="your secret phrase">
+
+      </form>
+      <br/>
+      <button class="primary">
+          Send
+        </button>
+
+      <div class="arrow">
+        <a id="backbutton_send" >&rarr;</a>
+      </div>
+    </div>
+
+
+    <div id="back_social" style="display:none;">
       <div class="icons">
         <div id="nosocial">Ghost.</div>
         <div id="github"></div>
@@ -39,10 +78,12 @@
         <div id="facebook"></div>
       </div>
       <div class="arrow">
-        <a id="backbutton" >&rarr;</a>
+        <a id="backbutton_social" >&rarr;</a>
       </div>
     </div>
+
   </div>
+
 
   <script src="js/flip.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -67,6 +108,7 @@
   <script type="text/javascript">
     var address = Constants.address
     $("#address").html(address)
+    $("#address1").val(address)
   </script>
   <script type="text/javascript">
     let text = document.getElementById("address").innerHTML;

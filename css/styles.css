@@ -124,7 +124,7 @@ ul {
   backface-visibility: hidden;
 }
 
-#back {
+#back_social {
   transform: rotateY(180deg);
   background-color: black;
   border-radius: 25px;
@@ -138,6 +138,45 @@ ul {
   margin: 20px 0;
   overflow: hidden;
   min-height: 450px;
+}
+
+#back_send {
+  transform: rotateY(180deg);
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
+  color: #B3B8CD;
+  padding: 30px 0 0;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  overflow: hidden;
+  min-height: 450px;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: Montserrat, sans-serif;
 }
 
 .card-container.flip {
@@ -156,7 +195,12 @@ ul {
   padding: 5px;
 }
 
-#backbutton {
+#backbutton_social {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#backbutton_send {
   cursor: pointer;
   font-size: 30px;
 }
