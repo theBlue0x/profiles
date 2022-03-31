@@ -161,7 +161,7 @@ input[type=text] {
   padding: 12px 20px;
   margin: 10px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid cornflowerblue;
   border-radius: 4px;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
@@ -172,11 +172,23 @@ input[type=text], select {
   padding: 12px 20px;
   margin: 10px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 0.5px solid cornflowerblue;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: black;
   font-family: Montserrat, sans-serif;
+  color: white;
+}
+
+input[type=text], select:focus-visible {
+  outline: cornflowerblue;
+}
+
+select {
+  font-family: Montserrat, sans-serif;
+  background: url(../assets/arrow.png) no-repeat right black;
+  -webkit-appearance: none;
+  background-position-x: 250px;
 }
 
 .card-container.flip {
@@ -215,7 +227,7 @@ button.primary {
   border-radius: 3px;
   color: #fff;
   font-family: Montserrat, sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   padding: 10px 25px;
   cursor: pointer;
   margin: 3px;
