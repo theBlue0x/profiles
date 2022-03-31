@@ -103,11 +103,11 @@ ul {
   position: relative;
   width: 350px;
   max-width: 100%;
+  min-height: 450px;
   text-align: center;
   margin: 20px 0;
   overflow: hidden;
   transition: transform 1s;
-  transform-style: preserve-3d;
   transition-delay: 250ms;
 }
 
@@ -140,8 +140,8 @@ ul {
   min-height: 450px;
 }
 
-.card-container.is-flipped {
-  transform: rotateY(180deg);
+.card-container.flip {
+  transform: rotateY(-180deg);
 }
 
 .qrcode {
