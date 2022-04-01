@@ -38,7 +38,7 @@ ul {
 .icons {
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -48,7 +48,7 @@ ul {
   font-size: 25px;
   margin: 0;
   position: absolute;
-  top: 85%;
+  top: 75%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -103,12 +103,13 @@ ul {
   position: relative;
   width: 350px;
   max-width: 100%;
-  min-height: 450px;
+  min-height: 550px;
   text-align: center;
   margin: 20px 0;
   overflow: hidden;
   transition: transform 1s;
   transition-delay: 250ms;
+  height: 550px;
 }
 
 .card-container img {
@@ -137,7 +138,7 @@ ul {
   text-align: center;
   margin: 20px 0;
   overflow: hidden;
-  min-height: 450px;
+  height: 550px;
 }
 
 #back_send {
@@ -153,7 +154,7 @@ ul {
   text-align: center;
   margin: 20px 0;
   overflow: hidden;
-  min-height: 450px;
+  height: 550px;
 }
 
 input[type=text] {
@@ -192,7 +193,7 @@ select {
 }
 
 .card-container.flip {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 
 .qrcode {
