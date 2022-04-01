@@ -120,11 +120,6 @@ ul {
   width: 150px;
 }
 
-.card__face {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
 #back_social {
   transform: rotateY(180deg);
   background-color: black;
