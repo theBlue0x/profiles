@@ -248,6 +248,7 @@ button.primary.ghost {
 .footer a {
   color: cornflowerblue;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {

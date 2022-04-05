@@ -28,7 +28,7 @@
         <div class="qrcode" id="qrcode"></div>
       </div>
       <div class="footer">
-        <h6><a id="market_link">View Marketplace Listings</a></h6>
+        <h6><a id="market_link"></a></h6>
         <h6><a id="nft_link">View NFT Collection</a></h6>
       </div>
     </div>
@@ -98,6 +98,7 @@
     var address = Constants.address
     $("#address").html(address)
     $("#address1").val(address)
+    $("#market_link").html('<a href=https://market.blue0x.com/market/userItems.html?user=' + address + '>View Marketplace Listings</a>')
   </script>
   <script type="text/javascript">
     let text = document.getElementById("address").innerHTML;
